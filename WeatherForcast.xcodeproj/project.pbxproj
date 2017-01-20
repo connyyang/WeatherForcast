@@ -12,6 +12,15 @@
 		AEB03ECF1E2F82A2000058F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB03ECD1E2F82A2000058F1 /* Main.storyboard */; };
 		AEB03ED11E2F82A2000058F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB03ED01E2F82A2000058F1 /* Assets.xcassets */; };
 		AEB03ED41E2F82A2000058F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB03ED21E2F82A2000058F1 /* LaunchScreen.storyboard */; };
+		AEB03EDC1E2F8896000058F1 /* NetworkProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EDB1E2F8896000058F1 /* NetworkProcessing.swift */; };
+		AEB03EDF1E2F8AF8000058F1 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EDE1E2F8AF8000058F1 /* Coordinate.swift */; };
+		AEB03EE11E2F90A6000058F1 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EE01E2F90A6000058F1 /* WeatherData.swift */; };
+		AEB03EE31E2F92EC000058F1 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EE21E2F92EC000058F1 /* CurrentWeather.swift */; };
+		AEB03EE51E2F94D8000058F1 /* HourlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EE41E2F94D8000058F1 /* HourlyWeather.swift */; };
+		AEB03EE91E302A39000058F1 /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EE81E302A39000058F1 /* DailyWeather.swift */; };
+		AEB03EEB1E302B87000058F1 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EEA1E302B87000058F1 /* WeatherClient.swift */; };
+		AEB03EED1E304E46000058F1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EEC1E304E46000058F1 /* Weather.swift */; };
+		AEB03EEF1E305000000058F1 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB03EEE1E305000000058F1 /* APIResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		AEB03ED01E2F82A2000058F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB03ED31E2F82A2000058F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB03ED51E2F82A2000058F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB03EDB1E2F8896000058F1 /* NetworkProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkProcessing.swift; path = ../NetworkProcessing.swift; sourceTree = "<group>"; };
+		AEB03EDE1E2F8AF8000058F1 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = ../Coordinate.swift; sourceTree = "<group>"; };
+		AEB03EE01E2F90A6000058F1 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		AEB03EE21E2F92EC000058F1 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		AEB03EE41E2F94D8000058F1 /* HourlyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeather.swift; sourceTree = "<group>"; };
+		AEB03EE81E302A39000058F1 /* DailyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
+		AEB03EEA1E302B87000058F1 /* WeatherClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
+		AEB03EEC1E304E46000058F1 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		AEB03EEE1E305000000058F1 /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 		AEB03EC81E2F82A2000058F1 /* WeatherForcast */ = {
 			isa = PBXGroup;
 			children = (
+				AEB03EDD1E2F88A2000058F1 /* Model */,
 				AEB03EC91E2F82A2000058F1 /* AppDelegate.swift */,
 				AEB03ECB1E2F82A2000058F1 /* ViewController.swift */,
 				AEB03ECD1E2F82A2000058F1 /* Main.storyboard */,
@@ -62,6 +81,22 @@
 				AEB03ED51E2F82A2000058F1 /* Info.plist */,
 			);
 			path = WeatherForcast;
+			sourceTree = "<group>";
+		};
+		AEB03EDD1E2F88A2000058F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEB03EDE1E2F8AF8000058F1 /* Coordinate.swift */,
+				AEB03EE01E2F90A6000058F1 /* WeatherData.swift */,
+				AEB03EDB1E2F8896000058F1 /* NetworkProcessing.swift */,
+				AEB03EE21E2F92EC000058F1 /* CurrentWeather.swift */,
+				AEB03EE41E2F94D8000058F1 /* HourlyWeather.swift */,
+				AEB03EE81E302A39000058F1 /* DailyWeather.swift */,
+				AEB03EEA1E302B87000058F1 /* WeatherClient.swift */,
+				AEB03EEC1E304E46000058F1 /* Weather.swift */,
+				AEB03EEE1E305000000058F1 /* APIResult.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +171,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB03EE91E302A39000058F1 /* DailyWeather.swift in Sources */,
 				AEB03ECC1E2F82A2000058F1 /* ViewController.swift in Sources */,
+				AEB03EEB1E302B87000058F1 /* WeatherClient.swift in Sources */,
+				AEB03EEF1E305000000058F1 /* APIResult.swift in Sources */,
+				AEB03EE11E2F90A6000058F1 /* WeatherData.swift in Sources */,
+				AEB03EED1E304E46000058F1 /* Weather.swift in Sources */,
 				AEB03ECA1E2F82A2000058F1 /* AppDelegate.swift in Sources */,
+				AEB03EDC1E2F8896000058F1 /* NetworkProcessing.swift in Sources */,
+				AEB03EE31E2F92EC000058F1 /* CurrentWeather.swift in Sources */,
+				AEB03EDF1E2F8AF8000058F1 /* Coordinate.swift in Sources */,
+				AEB03EE51E2F94D8000058F1 /* HourlyWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

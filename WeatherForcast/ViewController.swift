@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let weatherClient = WeatherClient(APIKey: "33c371344898311931ea3058dcc4730f")
+        weatherClient.fetchWeatherFor { result in
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
